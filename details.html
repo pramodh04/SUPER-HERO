@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Details</title>
+</head>
+<body>
+    <div class="details">
+        <div class="heading">
+            <div class="title">
+                <img src="https://www.wallpapersshare.com/img/big/batman-superhero-wallpaper-4k.jpg" id="logo-image"> 
+                <h1 class="main-heading" >SuperHero</h1>
+                <p class="title-tag">Hunter</p></div>
+            <div class="main-btn">
+               <a href="index.html" id="home">Home</a>
+                <a href="favorites.html" id="favorite">Favorites</a>
+            </div>
+        </div >
+        <img src="./superheroes.jpg"class="bg-image"/>
+
+<div class="details-main">
+<div class="details-card">
+    <div id="image"> </div>
+      <div class="info">
+         <ul id="powerstats">
+            <h1>Powerstats</h1>
+         </ul>
+      </div>
+</div>
+</div>
+
+    </div>
+</body>
+</html>
+
+<script>
+    const details = document.querySelector(".details-card");
+    const image = document.getElementById("image");
+    const powerstats = document.getElementById("powerstats");
+    console.log(details);
+    const detailslist = JSON.parse(localStorage.getItem('selectedhero'));
+    console.log('detailslist',detailslist);
+    image.innerHTML = `<img src=${detailslist.image.url} class="selected-img" alt="selectedimage">`;
+    Object.keys(detailslist.powerstats).forEach((key)=>{
+        powerstats.innerHTML += `<li class="list-group-item"> <i>${key}</i> ${detailslist.powerstats[key]}</li>`;
+    })
+
+    // details.innerHTML += ``
+
+</script>

@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+background-color: black;
+}
+.main-heading{
+color: aliceblue;
+font-family: 'Dancing Script', cursive;
+}
+#logo-image{
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+.title{
+    display: flex;
+    margin: 0 5vw;
+}
+.heading{
+    position: relative;
+    z-index: 100;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* margin: 0px 20px 0px 20px; */
+}
+.title-tag{
+
+    font-family: sans-serif;
+    color: white;
+    margin-top: 15px;
+}
+.main-btn{
+    margin: 10px  60px;
+}
+.main-btn a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 30px;
+}
+
+/*  */
+.main{
+ position: relative;
+}
+.bg-image{
+    opacity: 0.2;
+    width: 100vw;
+    height: 91vh;
+    object-fit:cover;
+}
+.sub-main{
+  position: absolute;
+  top: 20vh;
+  left: 20vw;
+}
+.tag-line{
+    text-align: center;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    margin:80px 0px 40px 0px ;
+}
+.search-box{
+   margin-left: 6vw;
+   position: relative;
+}
+
+#name{
+    padding: 0px 20px;
+    font-size: 15px;
+    width: 45vw;
+   height: 40px;
+   border: 2px solid skyblue; 
+   border-radius:5px;
+}
+
+#results{
+    height: 50vh;
+    position: absolute;
+    overflow-x: hidden;
+}
+
+.search-card{
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 47vw;
+    height: 100px;
+    display: flex;
+   
+}
+.search-img{
+    height: 80px;
+    padding: 10px;
+}
+
+#search-title{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px 20px;
+}
+.search-btn{
+    padding: 2px;
+    margin: 5px 20px;
+    background-color: rgb(180, 178, 178);
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.favorite-btn{
+    padding: 2px;
+    margin: 5px 20px;
+    background-color:greenyellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.added{
+    background-color: rgb(252, 177, 147);
+}
+.favorite-body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    background-color: rgb(252, 249, 249,0.2); 
+}
+.favorites{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 8vh 10vw;
+   
+}
+.favorite-card{
+    margin:20px 50px;
+    width: 200px;
+    height: 300px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#favorite-img{
+    height: 200px;
+    padding:10px 25px;
+}
+/* .favorite-main{
+    position: relative;
+} */
+
+/* details.html */
+.details{
+    position: relative;
+}
+
+.details-main{
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 100%;
+    overflow-x:hidden ;
+}
+
+.details-card{
+    margin: 5vh 13vw;
+    background-color: rgb(247, 241, 241,0.2);
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list-group-item{
+list-style: none;
+display: flex;
+justify-content: space-between;
+padding: 10px;
+border-bottom: 1px solid white;
+}
+
+#powerstats{
+    padding: 10px 40px;
+}
