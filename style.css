@@ -191,3 +191,49 @@ border-bottom: 1px solid white;
 #powerstats{
     padding: 10px 40px;
 }
+
+
+@media screen and (max-width: 500px)
+{
+    .title{
+     margin: 0px;
+    }
+    .sub-main{
+        position: absolute;
+        top: 5vh;
+        left: 0;
+        padding: 5px;
+    }
+   .tag-line{
+       text-align: center;
+   }
+   .search-box{
+       margin: 0;
+   }
+   #name{
+       width: 80vw;
+       margin:0 5vw;
+       padding:0 5px;
+   }
+   .search-card{
+       width: 84vw;
+       margin:0 5vw;
+   }
+    .main-btn a{
+     margin: 10px 10px;
+    }
+    .details-card{
+        margin: 80px 10px 40px 10px;
+        padding: 10px 0px;
+    }
+    .list-group-item{
+        padding:5px;
+        }
+        #powerstats{
+            padding: 5px 10px;
+        }
+        .selected-img{
+            margin-top: 10px;
+            height: 60vh;
+        }
+}
